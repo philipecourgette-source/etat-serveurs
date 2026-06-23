@@ -16,13 +16,13 @@ fetch('status.txt')
       const etat = parts[1].trim();
 
       const div = document.createElement('div');
-      div.innerHTML = `
-        <strong>${nom}</strong> :
-        ${etat === '1'
-          ? '<span style="color:green">Fonctionnel</span>'
-          : '<span style="color:red">Hors Service</span>'}
-      `;
+     div.className = 'server';
 
+div.innerHTML = `
+    <span class="server-name">${nom}</span>
+    <span class="status ${etat === '1' ? 'online' : 'offline'}">
+        ${etat === '1' ? 'Fonctionnel' : 'Hors Service'}
+    </span>
       container.appendChild(div);
     });
   })
