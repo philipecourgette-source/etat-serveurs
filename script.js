@@ -12,18 +12,19 @@ fetch('status.txt')
       const parts = ligne.split(':');
       if (parts.length < 2) return;
 
-      const nom = parts[0].trim();
-      const etat = parts[1].trim();
+     const nom = parts[0].trim();
+const etat = parts[1].trim();
 
-      const div = document.createElement('div');
-     div.className = 'server';
+const div = document.createElement('div');
+div.classList.add('server');
 
 div.innerHTML = `
     <span class="server-name">${nom}</span>
     <span class="status ${etat === '1' ? 'online' : 'offline'}">
         ${etat === '1' ? 'Fonctionnel' : 'Hors Service'}
     </span>
-      container.appendChild(div);
+`;
+    container.appendChild(div);
     });
   })
   .catch(error => {
