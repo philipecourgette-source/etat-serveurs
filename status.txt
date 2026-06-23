@@ -42,6 +42,6 @@ Serveur Vénérieu : 1
 Serveur Vernas : 1
 Serveur Vertrieu : 1
 Serveur Veyssilieu : 1
-Serveur Vézeronce-Curtin  	2283
-Serveur Vignieu  	1044
-Serveur Villemoirieu  	1989
+Serveur Vézeronce-Curtin : 1
+Serveur Vignieu : 1
+Serveur Villemoirieu : 1
