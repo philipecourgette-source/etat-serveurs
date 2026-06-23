@@ -11,15 +11,14 @@ body {
     margin-bottom: 30px;
 }
 
-/* Zone des alertes */
 #alertes {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #serveurs {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -36,7 +35,6 @@ body {
 
 .server-name {
     font-weight: bold;
-    font-size: 16px;
 }
 
 .status {
@@ -46,38 +44,34 @@ body {
     font-weight: bold;
 }
 
-/* Fonctionnel */
 .online {
     background: #16a34a;
 }
 
-/* Hors service */
 .offline {
     background: #dc2626;
 }
 
-/* Serveur en erreur */
 .error-server {
-    border: 3px solid #ff0000;
+    border: 3px solid #dc2626;
     animation: blink 1s infinite;
 }
 
-/* Clignotement rouge */
 @keyframes blink {
 
     0% {
         background: #ffffff;
-        box-shadow: 0 0 5px #ff0000;
+        box-shadow: 0 0 5px red;
     }
 
     50% {
-        background: #ffe5e5;
-        box-shadow: 0 0 25px #ff0000;
+        background: #ffd6d6;
+        box-shadow: 0 0 25px red;
     }
 
     100% {
         background: #ffffff;
-        box-shadow: 0 0 5px #ff0000;
+        box-shadow: 0 0 5px red;
     }
 }
 
