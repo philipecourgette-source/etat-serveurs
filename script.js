@@ -1,4 +1,4 @@
-fetch('status.txt')
+fetch('status.txt?' + new Date().getTime())
     .then(response => response.text())
     .then(data => {
 
